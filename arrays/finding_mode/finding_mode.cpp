@@ -10,7 +10,8 @@ int compareFunc(const void * voidA, const void * voidB) {
 int main(){
 	
 	const int ARRAY_SIZE = 12;
-	int surveyData[ARRAY_SIZE] = {4, 7, 7, 9, 9, 9, 8, 3, 3, 3, 3, 10};
+	int surveyData[ARRAY_SIZE] = {4, 7, 3, 8, 9, 7, 3, 9, 9, 3, 3, 10};
+	qsort(surveyData, ARRAY_SIZE, sizeof(int), compareFunc);
 
 	int mostFrequent;
 	int highestFrequency = 0;
