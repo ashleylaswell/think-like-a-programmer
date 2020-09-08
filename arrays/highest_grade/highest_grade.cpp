@@ -28,5 +28,5 @@ int main() {
 			highPosition = i;
 		}
 	}
-	cout << highPosition << "\n";
+	cout << studentArray[highPosition].name << "\n";
 }
