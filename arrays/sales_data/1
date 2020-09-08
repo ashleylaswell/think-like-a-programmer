@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	const int NUM_AGENTS = 3;
+	const int NUM_MONTHS = 12;
+	int sales[NUM_AGENTS][NUM_MONTHS] = {
+
+	}
+}
+
