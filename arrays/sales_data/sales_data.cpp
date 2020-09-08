@@ -1,15 +1,16 @@
 #include <iostream>
 using namespace std;
 
-	//finds average of an array of integers
-	double arrayAverage(int intArray[], int ARRAY_SIZE) {
-		double sum = 0;
-		for (int i = 0; i < ARRAY_SIZE; i++) {
-			sum += intArray[i];
-		}
-		double average = sum / ARRAY_SIZE;
-		return average;
+//finds average of an array of integers
+double arrayAverage(int intArray[], int ARRAY_SIZE) {
+	double sum = 0;
+	for (int i = 0; i < ARRAY_SIZE; i++) {
+		sum += intArray[i];
 	}
+	double average = sum / ARRAY_SIZE;
+	return average;
+}
+
 int main(){
 	const int NUM_AGENTS = 3;
 	const int NUM_MONTHS = 12;
@@ -33,7 +34,6 @@ int main(){
 		if (agentAverage > highestAverage)
 			highestAverage = agentAverage;
 	}
-	
 	cout << "the highest sales of any agent: " << highestSales << "\n";
 	cout << "the highest monthly average: " << highestAverage << "\n";
 }
