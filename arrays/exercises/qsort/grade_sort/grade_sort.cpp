@@ -2,11 +2,17 @@
 using namespace std;
 
 //comparator function - sorts from smallest to largest
-int compareFunc(const void * voidA, const void * voidB){
-	int * intA = (int *)(voidA);
-	int * intB = (int *)(voidB);
+//int compareFunc(const void * voidA, const void * voidB){
+//	int * intA = (int *)(voidA);
+//	int * intB = (int *)(voidB);
 		
-	return *intA - *intB;
+//	return *intA - *intB;
+//}
+
+int compareFunc(const void *a, const void *b) {
+	struct student *intA = (struct student *)a;
+	struct student *intB = (struct sutdent *)b;
+	return (int)(intA->grade - intB->grade);
 }
 
 int main(){
