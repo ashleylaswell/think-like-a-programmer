@@ -11,11 +11,10 @@ using namespace std;
 
 int compareFunc(const void *a, const void *b) {
 	struct student *intA = (struct student *)a;
-	struct student *intB = (struct sutdent *)b;
+	struct student *intB = (struct student *)b;
 	return (int)(intA->grade - intB->grade);
 }
 
-int main(){
 	struct student {
 		int grade;
 		int studentID;
@@ -35,6 +34,7 @@ int main(){
 		{81, 10009, "Aretha"},
 		{68, 10010, "Veronica"},
 	};
+int main(){
 
 	qsort(studentArray, ARRAY_SIZE, sizeof(int), compareFunc);
 
