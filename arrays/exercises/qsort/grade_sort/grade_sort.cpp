@@ -9,7 +9,7 @@ struct student {
 };
 
 //comparator function - sorts from smallest to largest
-int compareGrade(const void* a, const void* b){
+int compareGrade(const void * a, const void * b){
 	student* studentA = (student*)(a);
 	student* studentB = (student*)(b);
 	return (studentA-> grade - studentB->grade);
@@ -34,10 +34,11 @@ int main(){
 	
 	//print studentArray sorted by grade
 	for (int i = 0; i < ARRAY_SIZE; i++) {
-		cout << studentArray[i].grade << "\t"
-			 << studentArray[i].studentID << "\t"
-			 << studentArray[i].name << "\n";
+		cout << studentArray[i].grade << '\t'
+			 << studentArray[i].studentID << '\t'
+			 << studentArray[i].name << '\n';
 	}
 	cout << "\n";
+	return 0;
 }
 
